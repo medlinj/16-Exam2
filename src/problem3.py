@@ -80,7 +80,7 @@ class Person(object):
         """
         # DONE: Implement and test this method.
         p2 = Person(self.age * 2)
-        return p2.get_age()
+        return p2
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
