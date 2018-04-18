@@ -6,7 +6,6 @@ Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
-
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_problem1()
@@ -37,13 +36,16 @@ def run_test_problem1():
     print('Testing the   problem1   function:')
     print('--------------------------------------------------')
 
-    rect = Rect(5, 10)   
+    rect = Rect(5, 10)
     print('Expected:', 5, 10)
     print('Actual:', rect.w, rect.h)
 
     rect = Rect(25, 100)
     print('Expected:', 25, 100)
     print('Actual:', rect.w, rect.h)
+
+    print('Expected:', 150)
+    print('Actual:', problem1([Rect(5, 10), Rect(10, 10)]))
 
 
 def problem1(rectangles):
@@ -67,9 +69,10 @@ def problem1(rectangles):
 
     total = 0
     for k in range(len(rectangles)):
-        area = rectangles[k].width * rectangles[k].height
+        area = rectangles[k].w * rectangles[k].h
         total = total + area
     return total
+
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
