@@ -37,7 +37,7 @@ def run_test_problem1():
     print('Testing the   problem1   function:')
     print('--------------------------------------------------')
 
-    rect = Rect(5, 10)
+    rect = Rect(5, 10)   
     print('Expected:', 5, 10)
     print('Actual:', rect.w, rect.h)
 
