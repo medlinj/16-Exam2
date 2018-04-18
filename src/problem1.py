@@ -2,8 +2,9 @@
 Exam 2, problem 1.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  April 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and JD Medlin.  April 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
+
 
 
 def main():
@@ -12,7 +13,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 2.  READ the code of the  Rect  class below.
+# DONE: 2.  READ the code of the  Rect  class below.
 #
 #   Once you are confident that you understand the  Rect  class and its code,
 #   change the TO-DO for this problem to DONE.
@@ -36,6 +37,14 @@ def run_test_problem1():
     print('Testing the   problem1   function:')
     print('--------------------------------------------------')
 
+    rect = Rect(5, 10)
+    print('Expected:', 5, 10)
+    print('Actual:', rect.w, rect.h)
+
+    rect = Rect(25, 100)
+    print('Expected:', 25, 100)
+    print('Actual:', rect.w, rect.h)
+
 
 def problem1(rectangles):
     """
@@ -53,9 +62,14 @@ def problem1(rectangles):
     :return: int
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     # -------------------------------------------------------------------------
 
+    total = 0
+    for k in range(len(rectangles)):
+        area = rectangles[k].width * rectangles[k].height
+        total = total + area
+    return total
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
