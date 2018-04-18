@@ -31,7 +31,7 @@ def main():
     print(p1.get_age())  # Should print 9
     print(p1.celebrate_birthday())
     print(p1.celebrate_birthdays(16))
-    print(p1.older_person())
+    print(p1.older_person().get_age())
 
     # -------------------------------------------------------------------------
     # WRITE MORE CODE HERE AS NEEDED to TEST the code that you write
